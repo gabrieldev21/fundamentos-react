@@ -1,8 +1,7 @@
 export default function (props) {
-
-  if(props.test) {
-    return props.children
+  if (props.test) {
+    return props.children;
   } else {
-    return false
+    return false;
   }
 }

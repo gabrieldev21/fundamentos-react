@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-export default () => 
-    <>
-      <h1>Primeiro componente</h1>
-      <h2>Exemplo de um componente</h2>
-    </>
-
+export default () => (
+  <>
+    <h1>Primeiro componente</h1>
+    <h2>Exemplo de um componente</h2>
+  </>
+);

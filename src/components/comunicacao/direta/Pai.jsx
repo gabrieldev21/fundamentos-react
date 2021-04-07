@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import Filho from './Filho'
+import Filho from "./Filho";
 
-export default props =>
+export default (props) => (
   <div>
-    <Filho sobrenome="Silva">João</Filho>
-    <Filho sobrenome="Silva">Maria</Filho>
-    <Filho sobrenome="Silva">Pedro</Filho>
+    <Filho {...props}>João</Filho>
+    <Filho sobrenome={props.sobrenome}>Maria</Filho>
+    <Filho sobrenome='Silva'>Pedro</Filho>
   </div>
+);

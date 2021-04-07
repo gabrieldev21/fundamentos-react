@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 
-export default props =>
+export default (props) => (
   <div>
     <h2>Os Filhos:</h2>
-    <div>
-      {props.children}
-    </div>
+    <div>{props.children}</div>
   </div>
+);

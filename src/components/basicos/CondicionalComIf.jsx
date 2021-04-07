@@ -1,9 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import If from './If'
+import If from "./If";
 
-export default props => { 
-
+export default (props) => {
   return (
     <div>
       <h2>O número é {props.numero}</h2>
@@ -14,8 +13,6 @@ export default props => {
       <If test={props.numero % 2 === 1}>
         <span>Impar</span>
       </If>
-
     </div>
-  ) 
-
-}
+  );
+};

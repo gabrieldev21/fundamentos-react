@@ -1,50 +1,56 @@
-import './App.css'
-import React from 'react';
+/* eslint-disable import/no-anonymous-default-export */
+import "./App.css";
+import React from "react";
 
-import Card from './components/layout/Card';
-import Primeiro from './components/basicos/Primeiro';
-import ComParametro from './components/basicos/ComParametro';
-import ComFilhos from './components/basicos/ComFilhos';
-import Repeticao from './components/basicos/Repeticao';
-import Condicional from './components/basicos/Condicional';
-import CondicionalComIf from './components/basicos/CondicionalComIf';
-import Pai from './components/comunicacao/direta/Pai'
+import Card from "./components/layout/Card";
+import Primeiro from "./components/basicos/Primeiro";
+import ComParametro from "./components/basicos/ComParametro";
+import ComFilhos from "./components/basicos/ComFilhos";
+import Repeticao from "./components/basicos/Repeticao";
+import Condicional from "./components/basicos/Condicional";
+import CondicionalComIf from "./components/basicos/CondicionalComIf";
+import Pai from "./components/comunicacao/direta/Pai";
+import Super from "./components/comunicacao/indireta/Super";
 
 export default (props) => (
-  <div className="App">
-    <Card titulo="#7 - Comunicação Direta" color="#FA6900">
-      <Pai></Pai>
-    </Card>
-    
-    <Card titulo="#6 - Condicional v2" color="#FA6900">
-      <CondicionalComIf numero={2}/>
+  <div className='App'>
+    <Card titulo='#8 - Comunicação Indireta' color='#000'>
+      <Super></Super>
     </Card>
 
-    <Card titulo="#05 - Condicional v1" color="#E94C6F">
-      <Condicional numero={1}/>
+    <Card titulo='#7 - Comunicação Direta' color='#4298B5'>
+      <Pai sobrenome='Freitas'></Pai>
     </Card>
 
-    <Card titulo="#04 - Repetição" color="#008BBA">
-      <Repeticao/>
+    <Card titulo='#6 - Condicional v2' color='#FA6900'>
+      <CondicionalComIf numero={2} />
     </Card>
 
-    <Card titulo="#03 - Componente com Filhos" color="#D96459">
-    <ComFilhos>
-      <ul>
+    <Card titulo='#05 - Condicional v1' color='#E94C6F'>
+      <Condicional numero={1} />
+    </Card>
+
+    <Card titulo='#04 - Repetição' color='#008BBA'>
+      <Repeticao />
+    </Card>
+
+    <Card titulo='#03 - Componente com Filhos' color='#D96459'>
+      <ComFilhos>
+        <ul>
           <li>Ana</li>
           <li>Bia</li>
           <li>Carlos</li>
           <li>Zé</li>
-      </ul>
-    </ComFilhos>
+        </ul>
+      </ComFilhos>
     </Card>
 
-    <Card titulo="#02 -Componente com Parametro" color="#FF85CB">
-      <ComParametro titulo="esse é o título" subtitulo="este é o subtitulo"/>
+    <Card titulo='#02 -Componente com Parametro' color='#FF85CB'>
+      <ComParametro titulo='esse é o título' subtitulo='este é o subtitulo' />
     </Card>
 
-    <Card titulo="#01 - Primeiro componente" color="#92B06A">
+    <Card titulo='#01 - Primeiro componente' color='#92B06A'>
       <Primeiro />
     </Card>
   </div>
-)
+);
